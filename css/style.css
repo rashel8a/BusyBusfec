@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  margin: 20 auto;
+  margin: 10 auto;
   width: 375px;
   height: 667px;
   background-color: #fff;
@@ -44,7 +44,6 @@ nav {
 .nav-title {
   color: #fff;
   text-align: center;
-  height: 20px;
   font-weight: 500;
   margin-top: 10px; /* margin top and bottom in figma is 12px*/
   margin-bottom: 12px;
@@ -80,7 +79,7 @@ width: 343px;
 
 .search-container1 input#search, .search-container2 input#search {
   width: 343px;
-  height: 28px; /*32 px in figma*/
+  height: 32px; /*32 px in figma*/
   background: #F1F1F2;
   border: none;
   border-radius: 10px;
@@ -90,7 +89,7 @@ width: 343px;
 }
 
 .Start-address, .End-address {
-  margin-top: -25px;
+  margin-top: -27px;
   margin-left: 92px;
 }
 
@@ -146,31 +145,27 @@ width: 343px;
 
 .bus-number li {
   width: 66px; /*76px in Figma*/
-  margin: 24px 20px 24px 16px; /*25px 23px 25px 16px in figma*/
-  font-size: 20px; /*21px in figma*/
+  margin: 24px 21px 24px 16px; /*25px 23px 25px 16px in figma*/
+  font-size: 21px; /*21px in figma*/
   font-weight: 500;
   color: #9330F0;
-  border: 1px solid #000;
 }
 
 .bus-direction li {
   width: 192px; /* 179px in Figma*/
   margin: 24px 0px 24px 0px;
   font-size: 17px; /*18px in Figma*/
-  border: 1px solid #000;
 }
 
 .bus-time-left li {
-  width: 40px; /*42px in figma*/
-  font-size: 20px;
+  width: 42px; /*42px in figma*/
+  font-size: 21px;
   font-weight: 500;
   text-align: right;
-  border: 1px solid #000;
-  margin: 24px 16px 24px 20px;/*25px 16px 25px 23px in Figma */
+  margin: 24px 16px 24px 21px;/*25px 16px 25px 23px in Figma */
 }
 
  .bus-number, .bus-direction, .bus-time-left {
   display: block;
   float: left;
-  height: 20px;
 }
