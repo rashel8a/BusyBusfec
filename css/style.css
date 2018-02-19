@@ -1,0 +1,179 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: Avenir, Avenir Next, sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+  height: 667px;
+  background-color: #fff;
+  overflow: scroll;
+}
+
+nav {
+  padding: 12.5px 0 15px 15px;
+  position: fixed;
+  width: 375px;
+  height: 64px;
+  background-color: #9330F0;
+}
+
+nav, .arrow-left, .nav-title {
+  display: inline-block;
+}
+
+.status-bar {
+  background-image: url(../images/BBStatus-bar.jpg);
+  background-size: cover;
+  width: 375px;
+  height: 20px;
+  border: 1px solid #000;
+}
+
+.arrow-left {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 20px;
+  border: 1px solid #000;
+}
+
+.nav-title {
+  color: #fff;
+  text-align: center;
+  border: 1px solid #000;
+  font-weight: 500;
+  margin-left: 66px;
+  margin-top: 12px;
+}
+
+.nav-title, .arrow-left {
+  display: block;
+  float: left;
+}
+
+h1, h3 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+.busybus-interface {
+  padding-top: 60px;
+}
+
+.search-box {
+margin-left: 16px;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 343px;
+}
+
+.search-container2 {
+  margin-top: 10px;
+}
+
+.search-container1 input#search, .search-container2 input#search {
+  width: 343px;
+  height: 30px; /*32 px in figma*/
+  background: #F1F1F2;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Start-address, .End-address {
+  margin-top: -27px;
+  margin-left: 92px;
+}
+
+.search-container1 input#search::-webkit-input-placeholder, .search-container2 input#search::-webkit-input-placeholder {
+  color: #000;
+}
+
+.map-box {
+  width: 343px;
+  height: 161px;
+}
+
+.map-image {
+  background-image: url(../images/BBMap.png);
+  background-size: contain;
+  margin: 0px 16px 20px 16px;
+  box-shadow: 2px 2px 2px #F6F7FB;
+}
+
+.map-box, .map-image {
+  display: inline-block;
+}
+
+.new-arrivals {
+  margin-left: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 343px;
+  height: 19px;
+  border: 1px solid #000;
+}
+
+.table-container {
+  width: 375px;
+  margin-top: 0px;
+  height: 280px;
+  border: 1px solid red;
+}
+
+.table-cell {
+  height: 68px; /*70px in Figma*/
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.table-cell, .bus-number, .bus-direction, .bus-time-left {
+  display: inline-block;
+  float: left;
+}
+
+.bus-number li {
+  width: 66px; /*76px in Figma*/
+  height: 20px;
+  margin: 24px 20px 24px 16px; /*25px 23px 25px 16px in figma*/
+  font-size: 20px; /*21px in figma*/
+  border: 1px solid #000;
+}
+
+.bus-direction li {
+  width: 192px; /* 179px in Figma*/
+  height: 20px;
+  margin: 24px 0px 24px 0px;
+  font-size: 17px; /*18px in Figma*/
+  border: 1px solid #000;
+}
+
+.bus-time-left li {
+  width: 40px; /*42px in figma*/
+  height: 20px;
+  font-size: 20px;
+  text-align: right;
+  border: 1px solid #000;
+  margin: 24px 16px 24px 20px;/*25px 16px 25px 23px in Figma */
+}
+
+ .bus-number, .bus-direction, .bus-time-left {
+  display: block;
+  float: left;
+}
