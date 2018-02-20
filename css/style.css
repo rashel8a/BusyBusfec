@@ -10,10 +10,11 @@ body {
 }
 
 .container {
-  margin: 30px 600px;
+  margin: 0px 30px;
   width: 375px;
   height: 667px;
   background-color: #fff;
+  overflow: scroll;
 }
 
 /* Navigation */
@@ -66,39 +67,74 @@ h3 {
 /* Start of body/interface section*/
 
 .busybus-interface {
-  padding-top: 62px;
+  padding-top: 72px;
 }
 
 /*Search field*/
 
 /*Outer box that surrounds both search containers*/
 .search-box {
-margin-left: 16px;
-margin-top: 20px;
-margin-bottom: 20px;
 width: 343px;
+height: 80px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 16px;
+}
+
+.end-box, .start-box, .search-container1, .search-container2 {
+  display: block;
+}
+
+.start {
+  padding-left: 20px;
+  padding-top: 4px;
+  font-weight: 500;
+}
+
+.start-box {
+  width: 80px;
+  height: 32px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #F1F1F2;
+}
+
+.end-box {
+  width: 80px;
+  height: 32px;
+  background-color: #F1F1F2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.end {
+  padding-left: 20px;
+  padding-top: 4px;
+  font-weight: 500;
 }
 
 /* Styling for both search containers */
 .search-container1 input#search, .search-container2 input#search {
-  width: 343px;
-  height: 32px; /*32 px in figma*/
+  width: 263px;
+  margin-left: 80px;
+  margin-top: -28px;
+  height: 32px;
   background: #F1F1F2;
   border: none;
-  border-radius: 10px;
-  padding-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 10px;
+  padding-bottom: 2px;
   font-size: 16px;
-  font-weight: 500;
+  font-family: inherit;
+  font-weight: normal;
 }
 
-.search-container2 {
-  margin-top: 12px;
+.search-container1 {
+  margin-bottom: 8px;
+  margin-left: 0px;
 }
 
-.Start-address, .End-address { /* Slghtly confused as to which should be the "placeholder" */
-  margin-top: -27px;
-  margin-left: 92px;
-}
 /*Changing color of "START" & "END"*/
 .search-container1 input#search::-webkit-input-placeholder, .search-container2 input#search::-webkit-input-placeholder {
   color: #000;
@@ -112,7 +148,7 @@ width: 343px;
 }
 
 .map-image {
-  background-image: url(../images/BBMap.png); /* Image also seems blurry */
+  background-image: url(../images/BBmapnewv.jpg);
   background-size: contain;
   margin: 0px 16px 20px 16px;
   box-shadow: 2px 2px 2px #F6F7FB;
@@ -140,13 +176,7 @@ width: 343px;
   height: 264px;
 }
 
-/*Line above first table cell only*/
-.table-cell.line {
-  border-top: 1px solid #BDBDBD;
-}
-
 .table-cell {
-  height: 70px;
   width: 100%;
   border-bottom: 1px solid #BDBDBD;
 }
@@ -158,25 +188,22 @@ width: 343px;
 
 /*Content within table cells*/
 
-.bus-number li {
+.bus-number {
   width: 66px; /*76px in Figma*/
-  height: 20px;
   margin: 25px 21px 25px 16px;
   font-size: 21px;
   font-weight: 500;
   color: #9330F0;
 }
 
-.bus-direction li {
+.bus-direction {
   width: 192px; /* 179px in Figma*/
-  height: 20px;
   margin: 26px 0px 24px 0px;
   font-size: 17px; /*18px in Figma*/
 }
 
-.bus-time-left li {
+.bus-time-left {
   width: 42px;
-  height: 20px;
   font-size: 21px;
   font-weight: 500;
   text-align: right;
