@@ -1,6 +1,7 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+/* Start of Body*/
 
 body {
   background-color: #333;
@@ -15,6 +16,8 @@ body {
   background-color: #fff;
 }
 
+/* Navigation */
+
 nav {
   position: fixed;
   width: 375px;
@@ -28,7 +31,7 @@ nav {
 }
 
 .status-bar {
-  background-image: url(../images/BBstatusbarretina.png);
+  background-image: url(../images/BBstatusbarretina.png); /* Image blurry for some reason? */
   background-size: cover;
   width: 375px;
   height: 20px;
@@ -46,6 +49,7 @@ nav {
   font-weight: 500;
   margin: 10px 0 12px 65px; /* margin top and bottom in figma is 12px and margin left is 78px*/
 }
+/*End of Navigation*/
 
 h1, h3 {
   line-height: 1.5;
@@ -59,10 +63,15 @@ h3 {
   font-size: 1.6em;
 }
 
+/* Start of body/interface section*/
+
 .busybus-interface {
   padding-top: 62px;
 }
 
+/*Search field*/
+
+/*Outer box that surrounds both search containers*/
 .search-box {
 margin-left: 16px;
 margin-top: 20px;
@@ -70,10 +79,7 @@ margin-bottom: 20px;
 width: 343px;
 }
 
-.search-container2 {
-  margin-top: 12px;
-}
-
+/* Styling for both search containers */
 .search-container1 input#search, .search-container2 input#search {
   width: 343px;
   height: 32px; /*32 px in figma*/
@@ -85,14 +91,20 @@ width: 343px;
   font-weight: 500;
 }
 
-.Start-address, .End-address {
+.search-container2 {
+  margin-top: 12px;
+}
+
+.Start-address, .End-address { /* Slghtly confused as to which should be the "placeholder" */
   margin-top: -27px;
   margin-left: 92px;
 }
-
+/*Changing color of "START" & "END"*/
 .search-container1 input#search::-webkit-input-placeholder, .search-container2 input#search::-webkit-input-placeholder {
   color: #000;
 }
+
+/* Map section */
 
 .map-box {
   width: 343px;
@@ -100,7 +112,7 @@ width: 343px;
 }
 
 .map-image {
-  background-image: url(../images/BBMap.png);
+  background-image: url(../images/BBMap.png); /* Image also seems blurry */
   background-size: contain;
   margin: 0px 16px 20px 16px;
   box-shadow: 2px 2px 2px #F6F7FB;
@@ -109,6 +121,8 @@ width: 343px;
 .map-box, .map-image {
   display: inline-block;
 }
+
+/*Table cell styling*/
 
 .new-arrivals {
   margin-left: 16px;
@@ -119,18 +133,20 @@ width: 343px;
   height: 23px;
 }
 
+/* Container portion covering all table cells */
 .table-container {
   width: 375px;
   margin-top: 0;
   height: 264px;
 }
 
+/*Line above first table cell only*/
 .table-cell.line {
   border-top: 1px solid #BDBDBD;
 }
 
 .table-cell {
-  height: 70px; /*70px in Figma*/
+  height: 70px;
   width: 100%;
   border-bottom: 1px solid #BDBDBD;
 }
@@ -140,10 +156,12 @@ width: 343px;
   float: left;
 }
 
+/*Content within table cells*/
+
 .bus-number li {
   width: 66px; /*76px in Figma*/
-  margin: 25px 21px 25px 16px; /*25px 23px 25px 16px in figma*/
-  font-size: 21px; /*21px in figma*/
+  margin: 25px 21px 25px 16px;
+  font-size: 21px;
   font-weight: 500;
   color: #9330F0;
 }
@@ -155,7 +173,7 @@ width: 343px;
 }
 
 .bus-time-left li {
-  width: 42px; /*42px in figma*/
+  width: 42px;
   font-size: 21px;
   font-weight: 500;
   text-align: right;
