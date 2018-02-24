@@ -171,17 +171,17 @@ h4 {
 
 .icon {
   margin-left: 16px;
-  margin-top: -31px;
+  margin-top: -29px;
   width: 25px;
-  height: 24px;
+  height: 22px;
 }
 
 .icon-image {
-  background-image: url('../images/rerouteicon6.png');
+  background-image: url('../images/rerouteicon13.png');
   background-repeat: no-repeat;
-  margin: -31px 0 0px 16px;
-  width: 25px;
-  height: 24px;
+  margin: -29px 0 0px 16px;
+  width: 24px;
+  height: 23px;
   padding: 0;
 }
 
@@ -199,7 +199,7 @@ h4 {
 }
 
 .header-content h2 {
-  margin: -1px 0 0 42px;
+  margin: -1px 0 0 43px;
   padding-top: 2.7%;
   width: 132px; /*Needs to stay at this length for all to be equal lengths */
 }
