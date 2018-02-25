@@ -47,7 +47,8 @@ nav {
   color: #fff;
   text-align: center;
   font-weight: 500;
-  margin: 2.5% 0 2.6% 17.33333333%; /*9px 0 10px 75px*/
+  width: 58.13333333%; /*218px*/
+  margin: 2.6% 0 2.6% 13.06666667%; /*10px 0 10px 49px*/
 }
 /*END OF NAV BAR*/
 /*FONT SIZES*/
@@ -66,14 +67,14 @@ h3 {
 
 /* START OF MAIN TAG*/
 .busybus-interface {
-  padding-top: 17.5%; /*67px*/
+  padding-top: 17.7%; /*67px*/
 }
 
 /*SEARCH BOX SECTION*/
 .search-box {
   height: 74px;
   width: 91.46666667%; /*343px*/
-  margin: 5.5% 0 5.5% 4.266666667%; /*20px 0 20px 16px*/
+  margin: 5.333333333% 0 5.333333333% 4.266666667%; /*20px 0 20px 16px*/
 }
 
 /*SEARCH CONTAINER 1 & SEARCH CONTAINER 2*/
@@ -99,7 +100,7 @@ h3 {
   padding: 1.5% 0 0.4% 5.5%; /*5px 0 3px 20px*/
 }
 
-/*START & END FONT COLOR STYLING*/
+/*SEARCH CONTAINERS FONT COLOR STYLING*/
 .search-container1 input#search::-webkit-input-placeholder, .search-container2 input#search::-webkit-input-placeholder {
   color: #000;
 }
@@ -119,12 +120,12 @@ h3 {
 .map-box {
   width: 91.46666667%; /*343px*/
   height: 161px;
+  margin: 0 4.266666667% 5.333333333% 4.266666667%; /* 0 16px 20px 16px */
 }
 
 .map-image {
   background-image: url('../images/BBmapnewv.jpg');
   background-size: contain;
-  margin: 0 4.266666667% 5.5% 4.266666667%; /* 0 16px 20px 16px */
 }
 
 .map-box, .map-image {
@@ -165,7 +166,7 @@ h3 {
 .header-content {
   font-weight: 450;
   font-size: 1.7em;
-  margin-left: 11.46666667%; /*43px*/
+  margin-left: 11.5%; /*43px*/
   margin-top: 3.4%; /*13px*/
   width: 35.2%; /*132px - to maintain equal lengths */
 }
@@ -173,7 +174,7 @@ h3 {
 /*SPAN - LEAVES EVERY, RESUMES AT*/
 .header-content span {
   width: 79%; /*105px*/
-  margin-left: 160%; /*212px;*/
+  margin-left: 162%; /*212px;*/
   margin-top: -17px;
   text-align: right;
 }
@@ -185,14 +186,14 @@ h3 {
 
 /* ICON PLACEMENT & STYLING */
 .icon {
-  margin-left: -42.66666667%; /*-160px*/
+  margin-left: -42%; /*-160px*/
   margin-top: 11px;
 }
 
 .icon-image {
   background-image: url('../images/rerouteicon13.png');
   background-repeat: no-repeat;
-  margin: 2.95% 0 0 -42.66666667%; /* 11px 0 0 -160px*/
+  margin: 2.95% 0 0 -42%; /* 11px 0 0 -160px*/
   width: 6.4%; /*24px*/
   height: 100%; /*23px*/
 }
@@ -242,7 +243,7 @@ h3 {
 
 /*Span - next bus arrival time underneath the "leaves every" minutes*/
 .bus-time-left span {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
 }
 
