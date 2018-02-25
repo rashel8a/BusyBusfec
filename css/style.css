@@ -1,8 +1,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-/* Start of Body*/
 
+/* BODY STARTS*/
 body {
   background-color: #333;
   font-family: Avenir, Avenir Next, sans-serif;
@@ -10,19 +10,18 @@ body {
 }
 
 .container {
-  margin: 0px 30px;
-  width: 375px;
-  height: 1139px;
+  margin: 0 auto;
+  width: 36.1%; /*375px*/
+  height: 667px;
   background-color: #fff;
   overflow: scroll;
 }
 
-/* Navigation */
-
+/* NAV BAR */
 nav {
   position: fixed;
-  width: 375px;
-  height: 64px; /*64px in figma*/
+  width: 36.1%; /*375px*/
+  height: 8.5%; /*64px*/
   background-color: #9330F0;
 }
 
@@ -34,133 +33,133 @@ nav {
 .status-bar {
   background-image: url('../images/BBstatusbarretina.png'); /* Image blurry for some reason? */
   background-size: cover;
-  width: 375px;
+  width: 100%; /*375px*/
   height: 20px;
 }
 
 .arrow-left {
-  margin-top: 11px;
-  margin-bottom: 11px;
-  margin-left: 16px;
+  margin-top: 3%; /*11px*/
+  margin-bottom: 3%; /*11px*/
+  margin-left: 4.266666667%;/*16px*/
 }
 
 .nav-title {
   color: #fff;
   text-align: center;
   font-weight: 500;
-  margin: 10px 0 10px 65px; /* margin top and bottom in figma is 12px and margin left is 78px*/
+  margin: 2.5% 0 2.6% 17.33333333%; /*9px 0 10px 75px*/
 }
-/*End of Navigation*/
-
-h1, h2, h3, h4 {
+/*END OF NAV BAR*/
+/*FONT SIZES*/
+h1, h3 {
   line-height: 1.5;
 }
 
 h1 {
-  font-size: 1.8em;
-}
-
-h2 {
   font-size: 1.7em;
 }
 
 h3 {
-  font-size: 1.6em;
-}
-
-h4 {
-  padding-left: 20px;
-  padding-top: 8px;
   font-weight: 500;
   font-size: 1.6em;
 }
-
-/* Start of body/interface section*/
-
-.busybus-interface {
-  padding-top: 67px;
+/* START OF MAIN TAG*/
+main {
+  padding-top: 17.5%;/*67px*/
 }
 
-/*Search field*/
-
+/*SEARCH BOX SECTION*/
 .search-box {
-    height: 74px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  height: 74px;
+  width: 91.46666667%; /*343px*/
+  margin: 5.5% 0 5.5% 4.266666667%; /*20px 0 20px 16px*/
 }
 
-/*Outer box that surrounds both search containers*/
+/*SEARCH CONTAINER 1 & SEARCH CONTAINER 2*/
 .search-container1 input#search, .search-container2 input#search {
-  width: 260px;
-  height: 32px;
+  font-size: 16px;
+  font-family: inherit;
   background: #F1F1F2;
+  width: 265px;
+  height: 32px;
   border: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-size: 16px;
-  font-family: inherit;
+  padding: 1px 0 0 2px;
+}
+
+/*START & END BOX*/
+.start-box, .end-box {
+  width: 21.33333333%; /*80px*/
+  height: 32px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #F1F1F2;
+  padding: 1.5% 0 0.4% 5.5%; /*5px 0 3px 20px*/
+}
+
+/*START & END FONT COLOR STYLING*/
+.search-container1 input#search::-webkit-input-placeholder, .search-container2 input#search::-webkit-input-placeholder {
+  color: #000;
 }
 
 .start-box, .search-container1 {
   display: block;
   float: left;
-  margin-top: -1px;
 }
 
 .end-box, .search-container2 {
   display: block;
   float: left;
-  margin-top: 10px;
+  margin-top: 2.7%; /*10px*/
 }
 
-.start-box, .end-box {
-  width: 80px;
-  height: 32px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #F1F1F2;
-  margin-left: 16px;
-}
-
-.search-box, .search-container1, .search-container2, .start-box, .end-box {
-  display: block;
-}
-
-/*Changing color of "START" & "END"*/
-.search-container1 input#search::-webkit-input-placeholder, .search-container2 input#search::-webkit-input-placeholder {
-  color: #000;
-}
-
-/* Map section */
-
+/*MAP SECTION*/
 .map-box {
-  width: 343px;
+  width: 91.46666667%; /*343px*/
   height: 161px;
 }
 
 .map-image {
   background-image: url('../images/BBmapnewv.jpg');
   background-size: contain;
-  margin: 0px 16px 20px 16px;
+  margin: 0 4.266666667% 5.5% 4.266666667%; /* 0 16px 20px 16px */
 }
 
 .map-box, .map-image {
   display: inline-block;
 }
 
-/*Table cell styling*/
+/*BEGINNING OF TABLE LIST STYLING*/
+/* TABLE CONTAINER STYLING */
+.table-container {
+  width: 100%; /*375px*/
+}
+/* TABLE CELL STYLING */
+.table-cell {
+  width: 100%;
+  height: 64px;
+  border-top: 1px solid #BDBDBD;
+  margin-bottom: 0;
+}
 
+.table-cell, .bus-number, .bus-direction, .bus-time-left, .bus-time-left2 {
+  display: inline-block;
+  float: left;
+}
+
+/*TABLE CONTAINER HEADER*/
 .bus-arrivals {
-  margin: 0 0 10px 4.266666667%; /*left = 16px*/
+  margin: 0 0 2.6% 4.266666667%; /* 0 0 10px 16px*/
   text-transform: uppercase;
   font-weight: 500;
-  width: 91.46666667%; /*343px*/
   height: 23px;
 }
 
+/*HEADER CONTAINER - ALL 5*/
 .header-container {
   width: 100%;
-  height: 40px; /*35px 35/780px (780px = size of table container)*/
+  height: 40px;
   background-color: #DFDFDF;
 }
 
@@ -169,20 +168,40 @@ h4 {
   float: left;
 }
 
+/*HEADER CONTENT STYLING*/
+.header-content {
+  font-weight: 450;
+  font-size: 1.7em;
+  margin-left: 11.46666667%; /*43px*/
+  margin-top: 3.4%; /*13px*/
+  width: 35.2%; /*132px - to maintain equal lengths */
+}
+
+/*SPAN - LEAVES EVERY, RESUMES AT*/
+.header-content span {
+  width: 79%; /*105px*/
+  margin-left: 160%; /*212px;*/
+  margin-top: -17px;
+  text-align: right;
+}
+
+.header-content, .header-content span {
+  display: inline-block;
+  float: left;
+}
+
+/* ICON PLACEMENT & STYLING */
 .icon {
-  margin-left: 16px;
-  margin-top: -29px;
-  width: 25px;
-  height: 22px;
+  margin-left: -42.66666667%; /*-160px*/
+  margin-top: 11px;
 }
 
 .icon-image {
   background-image: url('../images/rerouteicon13.png');
   background-repeat: no-repeat;
-  margin: -29px 0 0px 16px;
-  width: 24px;
-  height: 23px;
-  padding: 0;
+  margin: 2.95% 0 0 -42.66666667%; /* 11px 0 0 -160px*/
+  width: 6.4%; /*24px*/
+  height: 100%; /*23px*/
 }
 
 .header-container, .icon-image {
@@ -190,85 +209,48 @@ h4 {
   float: left;
 }
 
-.header-content {
-  height: 40px;
-}
-
-.header-content h2, .header-content span {
-  display: inline-block;
-}
-
-.header-content h2 {
-  margin: -1px 0 0 43px;
-  padding-top: 2.7%;
-  width: 132px; /*Needs to stay at this length for all to be equal lengths */
-}
-
-.header-content span {
-  font-size: 1.7em;
-  width: 102px;
-  margin-left: 80px; /*71px;*/
-}
-
-/* Container portion covering all table cells */
-.table-container {
-  width: 375px;
-  margin-top: 0;
-  height: 780px;
-}
-
-.table-cell {
-  width: 100%;
-  height: 64px;
-  border-top: 1px solid #BDBDBD;
-}
-
-.table-cell, .bus-number, .bus-direction, .bus-time-left, .bus-time-left2 {
-  display: inline-block;
-  float: left;
-}
-
-/*Content within table cells*/
-
+/*3 COLUMNS OF CONTENT WITHIN TABLE CELLS*/
 .bus-number {
-  width: 40px; /*76px in Figma*/
-  height: 18px;
-  margin: 23px 44px 23px 16px;
+  width: 10.66666667%; /*40px*/
+  margin: 6.133333333% 8.8% 6.133333333% 4.266666667%; /*23px 33px 23px 16px*/
   font-size: 21px;
   font-weight: 500;
   color: #9330F0;
 }
 
 .bus-direction {
-  width: 176px; /* 179px in Figma*/
-  margin: 23px 3px 23px 0px;
-  font-size: 17px; /*18px in Figma*/
+  width: 176px;
+  margin: 6.133333333% 0 6.133333333% 0; /*23px 0 23px 0 */
+  font-size: 17px;
 }
 
-.bus-time-left, .bus-time-left2 {
-  width: 80px;
-  height: 40px;
-  line-height: 1.3;
+.bus-time-left, .bus-time-left2 { /*Placed 2 different bus time lengths for "leaves every" and "resumes at" content*/
   font-size: 18px;
+  line-height: 1.3;
+  width: 16%; /*60px*/
+  height: 40px;
   font-weight: 500;
   text-align: right;
-  margin: 12px 16px 12px 0px;/*25px 16px 25px 23px in Figma */
+  margin: 3.1% 4.266666667% 3.1% 8.666666667%;/* 12px 16px 12px 32.5px */
 }
 
 .bus-time-left, .bus-time-left span {
   display: block;
 }
 
+/*Span - next bus arrival time underneath the "leaves every" minutes*/
 .bus-time-left span {
   font-size: 14px;
   font-weight: normal;
 }
-
+/*Bus times under the "reroute" and "out of service" headers*/
 .bus-time-left2 {
-  height: 18px;
-  margin: 23px 16px 23px 0px;
+  width: 18.66666667%; /*70px*/
+  margin: 6.133333333% 4.266666667% 6.133333333% 6%; /*23px 16px 23px 22.5px*/
 }
- /*.bus-number, .bus-direction, .bus-time-left {
-  display: block;
-  float: left;
-}*/
+
+.table-cell.line {
+  border-bottom: 1px solid #BDBDBD;
+}
+
+/* END OF BODY*/
