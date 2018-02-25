@@ -11,7 +11,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 36.1%; /*375px*/
+  padding: 0;
+  width: 375px;
   height: 667px;
   background-color: #fff;
   overflow: scroll;
@@ -20,8 +21,8 @@ body {
 /* NAV BAR */
 nav {
   position: fixed;
-  width: 36.1%; /*375px*/
-  height: 8.5%; /*64px*/
+  width: inherit;
+  height: 64px;
   background-color: #9330F0;
 }
 
@@ -63,8 +64,9 @@ h3 {
   font-weight: 500;
   font-size: 1.6em;
 }
+
 /* START OF MAIN TAG*/
-main {
+.busybus-interface {
   padding-top: 17.5%;/*67px*/
 }
 
@@ -131,9 +133,8 @@ main {
 }
 
 /*BEGINNING OF TABLE LIST STYLING*/
-/* TABLE CONTAINER STYLING */
 .table-container {
-  width: 100%; /*375px*/
+  height: 809px;
 }
 /* TABLE CELL STYLING */
 .table-cell {
@@ -227,11 +228,11 @@ main {
 .bus-time-left, .bus-time-left2 { /*Placed 2 different bus time lengths for "leaves every" and "resumes at" content*/
   font-size: 18px;
   line-height: 1.3;
-  width: 16%; /*60px*/
+  width: 60px; /*60px*/
   height: 40px;
   font-weight: 500;
   text-align: right;
-  margin: 3.1% 4.266666667% 3.1% 8.666666667%;/* 12px 16px 12px 32.5px */
+  margin: 3.1% 4.266666667% 3.1% 8%;/* 12px 16px 12px 32.5px */
 }
 
 .bus-time-left, .bus-time-left span {
@@ -246,10 +247,10 @@ main {
 /*Bus times under the "reroute" and "out of service" headers*/
 .bus-time-left2 {
   width: 18.66666667%; /*70px*/
-  margin: 6.133333333% 4.266666667% 6.133333333% 6%; /*23px 16px 23px 22.5px*/
+  margin: 6.133333333% 4.266666667% 6.133333333% 4%; /*23px 16px 23px 22.5px*/
 }
 
-.table-cell.line {
+.line {
   border-bottom: 1px solid #BDBDBD;
 }
 
