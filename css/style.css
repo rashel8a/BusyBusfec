@@ -21,7 +21,7 @@ body {
 /* NAV BAR */
 nav {
   position: fixed;
-  width: inherit;
+  width: 375px;
   background-color: #9330F0;
 }
 
@@ -33,13 +33,13 @@ nav {
 .status-bar {
   background-image: url('../images/BBstatusbarretina.png');
   background-size: cover;
-  width: 100%; /*375px*/
+  width: 375px; /*375px*/
   height: 20px;
 }
 
 .arrow-left {
-  margin-top: 3%; /*11px*/
-  margin-bottom: 3%; /*11px*/
+  margin-top: 11px;
+  margin-bottom: 11px;
   margin-left: 4.266666667%;/*16px*/
 }
 
@@ -47,8 +47,8 @@ nav {
   color: #fff;
   text-align: center;
   font-weight: 500;
-  width: 58.13333333%; /*218px*/
-  margin: 2.6% 0 2.6% 13.06666667%; /*10px 0 10px 49px*/
+  width: 218px;
+  margin: 10px 0 10px 49px;
 }
 /*END OF NAV BAR*/
 /*FONT SIZES*/
@@ -67,14 +67,14 @@ h3 {
 
 /* START OF MAIN TAG*/
 .busybus-interface {
-  padding-top: 17.7%; /*67px*/
+  padding-top: 67.5px; /*67px*/
 }
 
 /*SEARCH BOX SECTION*/
 .search-box {
   height: 75px;
-  width: 91.46666667%; /*343px*/
-  margin: 5.333333333% 0 5.333333333% 4.266666667%; /*20px 0 20px 16px*/
+  width: 343px;
+  margin: 20px 0 20px 16px;
 }
 
 /*SEARCH CONTAINER 1 & SEARCH CONTAINER 2*/
@@ -88,6 +88,7 @@ h3 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 1px 0 0 2px;
+  margin: 0 0 9px 0;
 }
 
 /*START & END BOX*/
@@ -97,7 +98,8 @@ h3 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #F1F1F2;
-  padding: 1.5% 0 0.4% 5.5%; /*5px 0 3px 20px*/
+  padding: 5px 0 3px 20px;
+  margin: 0;
 }
 
 /*SEARCH CONTAINERS FONT COLOR STYLING*/
@@ -113,14 +115,13 @@ h3 {
 .end-box, .search-container2 {
   display: block;
   float: left;
-  margin-top: 2.7%; /*10px*/
 }
 
 /*MAP SECTION*/
 .map-box {
-  width: 91.46666667%; /*343px*/
+  width: 343px;
   height: 161px;
-  margin: 0 4.266666667% 5.333333333% 4.266666667%; /* 0 16px 20px 16px */
+  margin: 0 16px 20px 16px;
 }
 
 .map-image {
@@ -133,18 +134,16 @@ h3 {
 }
 
 /*BEGINNING OF TABLE LIST STYLING*/
-.table-container {
-  height: 800px;
-}
+/*Table container??????*/
 /* TABLE CELL STYLING */
 .table-cell {
-  width: 100%;
+  width: 375px;
   border-top: 1px solid #BDBDBD;
 }
 
 /*TABLE CONTAINER HEADER*/
 .bus-arrivals {
-  margin: 0 0 2.6% 4.266666667%; /* 0 0 10px 16px*/
+  margin: 0 0 10px 16px;
   text-transform: uppercase;
   font-weight: 500;
   height: 23px;
@@ -152,13 +151,13 @@ h3 {
 
 /*HEADER CONTAINER - ALL 5*/
 .header-container {
-  width: 100%;
+  width: 375px;
   height: 40px;
   background-color: #DFDFDF;
 }
 
-.header-container, .header-content, .icon {
-  display: inline-block;
+.header-container, .icon {
+  display: block;
   float: left;
 }
 
@@ -166,21 +165,21 @@ h3 {
 .header-content {
   font-weight: 450;
   font-size: 1.7em;
-  margin-left: 11%; /*43px*/
-  margin-top: 3.4%; /*13px*/
+  margin-left: 43px;
+  margin-top: 13px;
   width: 132px; /* to maintain equal lengths */
 }
 
 /*"LEAVES EVERY" & "RESUMES AT" SECTION*/
 .header-content span {
   width: 105px;
-  margin-left: 159%; /*213px;*/
+  margin-left: 210px;
   margin-top: -17px;
   text-align: right;
 }
 
 .header-content, .header-content span {
-  display: inline-block;
+  display: block;
   float: left;
 }
 
@@ -194,13 +193,13 @@ h3 {
 .icon-image {
   background-image: url('../images/rerouteicon13.png');
   background-repeat: no-repeat;
-  margin: 2.95% 0 0 -42%; /* 11px 0 0 -160px*/
+  margin: 10.5px 0 7.5px -157px;
   width: 24px;
-  height: 23px; /*23px*/
+  height: 23px;
 }
 
 .header-container, .icon-image {
-  display: inline-block;
+  display: block;
   float: left;
 }
 
@@ -211,8 +210,8 @@ h3 {
 }
 
 .bus-number {
-  width: 10.66666667%; /*40px*/
-  margin: 6.133333333% 6.666666667% 7.2% 4.266666667%; /*23px 27px 23px 16px*/
+  width: 40px;
+  margin: 23px 25px 23px 16px;
   font-size: 21px;
   font-weight: 500;
   color: #9330F0;
@@ -220,7 +219,7 @@ h3 {
 
 .bus-direction {
   width: 176px;
-  margin: 6.133333333% 0px 6.133333333% 0; /*23px 0 23px 0 */
+  margin: 23px 0px 23px 0;
   font-size: 17px;
 }
 
@@ -233,13 +232,13 @@ h3 {
   text-align: right;
   display: block;
   float: left;
-  margin: 3.7% 4.266666667% 3.7% 10.66666667%;/* 12px 16px 12px 40px */
+  margin: 12px 16px 12px 40px;
 }
 
 .bus-time-lefttwo {
   width: 70px;
   height: 20px;
-  margin: 6.133333333% 4.266666667% 6.133333333% 6%; /*23px 16px 23px 25px;*/
+  margin: 23px 16px 23px 30px;
 }
 
 /*Span - next bus arrival time underneath the "leaves every" minutes*/
