@@ -166,7 +166,7 @@ h3 {
 .header-content {
   font-weight: 450;
   font-size: 1.7em;
-  margin-left: 11.5%; /*43px*/
+  margin-left: 11%; /*43px*/
   margin-top: 3.4%; /*13px*/
   width: 132px; /* to maintain equal lengths */
 }
@@ -174,7 +174,7 @@ h3 {
 /*"LEAVES EVERY" & "RESUMES AT" SECTION*/
 .header-content span {
   width: 105px;
-  margin-left: 158%; /*212px;*/
+  margin-left: 159%; /*213px;*/
   margin-top: -17px;
   text-align: right;
 }
@@ -186,7 +186,7 @@ h3 {
 
 /* ICON PLACEMENT & STYLING */
 .icon {
-  margin: 10.5px 0 7.5px -158px;
+  margin: 10.5px 0 7.5px -157px;
   width: 23px;
   height: 22px;
 }
