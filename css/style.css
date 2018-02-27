@@ -14,13 +14,13 @@ body {
   width: 375px;
   height: 667px;
   background-color: #fff;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 /* NAV BAR */
 nav {
   position: fixed;
-  width: inherit;
+  width: 375px;
   background-color: #9330F0;
 }
 
@@ -135,7 +135,6 @@ h3 {
 }
 
 /*BEGINNING OF TABLE LIST STYLING*/
-/*Table container??????*/
 /* TABLE CELL STYLING */
 .table-cell {
   border-top: 1px solid #BDBDBD;
@@ -193,9 +192,8 @@ h3 {
   height: 23px;
 }
 
-
 .header-container, .icon, .icon-image {
-  display: block;
+  display: inline-block;
   float: left;
 }
 
